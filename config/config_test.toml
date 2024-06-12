@@ -1,0 +1,30 @@
+[service]
+host = "0.0.0.0"
+port = 8096
+
+[cache]
+cache_backend = "redis"
+user = "default"
+password = ""
+host = "localhost"
+port = 6379
+db_name = "0"
+
+[db]
+db_backend = "mysql"
+user = "seika"
+password = "seika"
+host = "localhost"
+port = 3306
+db_name = "space-backend-test"
+max_conns = 10
+conn_timeout = 8
+
+[log]
+log_level = "info"
+log_dir = "./logs/test"
+log_file_prefix = "space-backend"
+log_file_suffix = "log"
+max_log_files = 14
+with_thread_info = true
+with_ansi = false
